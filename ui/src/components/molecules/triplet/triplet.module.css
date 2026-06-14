@@ -1,0 +1,24 @@
+.Root {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100%;
+}
+
+.Column {
+  display: flex;
+  align-items: center;
+  column-gap: var(--space-3x);
+}
+
+.ColumnLeft {
+  justify-content: flex-start;
+}
+
+.ColumnCenter {
+  justify-content: center;
+}
+
+.ColumnRight {
+  justify-content: flex-end;
+}
