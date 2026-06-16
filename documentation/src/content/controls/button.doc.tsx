@@ -11,6 +11,8 @@ export default function createButtonDoc(): DocMeta {
       label: "Click Me!",
     },
     examples: [
+      // { prop: 'onClick', defaultArgs: { onClick: () => alert("Click!") } },
+      { prop: "ref", disabled: true },
       { prop: "leftIcon", defaultArgs: { leftIcon: MartiniIcon } },
       { prop: "rightIcon", defaultArgs: { rightIcon: MartiniIcon } },
       { prop: "disabled", defaultArgs: { disabled: true } },

@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from "react";
+import type { ButtonHTMLAttributes } from "react";
 
 export type ControlVariant =
   | "primary"
@@ -10,7 +10,7 @@ export type ControlVariant =
 export type ControlSize = "sm" | "md" | "lg";
 export type ControlAppearance = "solid" | "outline";
 
-export interface ControlProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ControlProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * Отображаемый текст в кнопке
    */
