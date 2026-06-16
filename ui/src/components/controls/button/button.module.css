@@ -1,0 +1,138 @@
+.Root {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--radius-2x);
+  box-sizing: border-box;
+  border: 1px solid var(--_border, transparent);
+  background: var(--_bg, transparent);
+  color: var(--_fg, inherit);
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+
+  /* Цвет волны по умолчанию — для сплошной заливки светлый отблеск */
+  --ripple-color: color-mix(in srgb, white 45%, transparent);
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.Root:hover {
+  background: var(--_bg-hover, var(--_bg, transparent));
+}
+
+.Root:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.Label {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: inherit;
+}
+
+/* Variants */
+
+.Variant--primary {
+  --_bg: var(--color-control-primary-background);
+  --_bg-hover: var(--color-control-primary-background-hover);
+  --_fg: var(--color-control-primary-text);
+  --_border: var(--color-control-primary-background);
+
+  --_outline-border: var(--color-control-primary-outline-border);
+  --_outline-fg: var(--color-control-primary-outline-text);
+  --_outline-bg-hover: var(--color-control-primary-outline-background-hover);
+}
+
+.Variant--secondary {
+  --_bg: var(--color-control-secondary-background);
+  --_bg-hover: var(--color-control-secondary-background-hover);
+  --_fg: var(--color-control-secondary-text);
+  --_border: var(--color-control-secondary-background);
+
+  --_outline-border: var(--color-control-secondary-outline-border);
+  --_outline-fg: var(--color-control-secondary-outline-text);
+  --_outline-bg-hover: var(--color-control-secondary-outline-background-hover);
+}
+
+.Variant--success {
+  --_bg: var(--color-control-success-background);
+  --_bg-hover: var(--color-control-success-background-hover);
+  --_fg: var(--color-control-success-text);
+  --_border: var(--color-control-success-background);
+
+  --_outline-border: var(--color-control-success-outline-border);
+  --_outline-fg: var(--color-control-success-outline-text);
+  --_outline-bg-hover: var(--color-control-success-outline-background-hover);
+}
+
+.Variant--warning {
+  --_bg: var(--color-control-warning-background);
+  --_bg-hover: var(--color-control-warning-background-hover);
+  --_fg: var(--color-control-warning-text);
+  --_border: var(--color-control-warning-background);
+
+  --_outline-border: var(--color-control-warning-outline-border);
+  --_outline-fg: var(--color-control-warning-outline-text);
+  --_outline-bg-hover: var(--color-control-warning-outline-background-hover);
+}
+
+.Variant--danger {
+  --_bg: var(--color-control-danger-background);
+  --_bg-hover: var(--color-control-danger-background-hover);
+  --_fg: var(--color-control-danger-text);
+  --_border: var(--color-control-danger-background);
+
+  --_outline-border: var(--color-control-danger-outline-border);
+  --_outline-fg: var(--color-control-danger-outline-text);
+  --_outline-bg-hover: var(--color-control-danger-outline-background-hover);
+}
+
+/* Appearance */
+.Appearance--solid {
+}
+
+.Appearance--outline {
+  --_bg: transparent;
+  --_bg-hover: var(--_outline-bg-hover);
+  --_fg: var(--_outline-fg);
+  --_border: var(--_outline-border);
+
+  /* На прозрачном фоне волна окрашивается в цвет текста варианта */
+  --ripple-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+
+/* Sizes */
+.Size--sm {
+  height: 28px;
+  padding-inline: var(--radius-3x);
+  border-radius: var(--radius-2x);
+  font: var(--font-btn-sm);
+}
+
+.Size--md {
+  height: 36px;
+  padding-inline: var(--radius-6x);
+  border-radius: var(--radius-2x);
+  font: var(--font-btn-md);
+}
+
+.Size--lg {
+  height: 44px;
+  padding-inline: var(--radius-8x);
+  border-radius: var(--radius-3x);
+  font: var(--font-btn-lg);
+}
+
+.Rounded {
+  border-radius: var(--radius-full);
+}
