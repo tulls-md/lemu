@@ -1,4 +1,4 @@
-import { docs } from "../../docs";
+import { docs } from "@/docs";
 
 export const dynamicParams = false;
 export const generateStaticParams = docs.generateStaticParams;

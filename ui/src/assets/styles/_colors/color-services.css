@@ -1,0 +1,97 @@
+:root {
+  /* Success */
+  --success-1: #fbfefc;
+  --success-2: #f4fbf6;
+  --success-3: #e6f6eb;
+  --success-4: #d6f1df;
+  --success-5: #c4e8d1;
+  --success-6: #adddc0;
+  --success-7: #8eceaa;
+  --success-8: #5bb98b;
+  --success-9: #30a46c;
+  --success-10: #2b9a66;
+  --success-11: #218358;
+  --success-12: #193b2d;
+
+  --success-a1: #00c04004;
+  --success-a2: #00a32f0b;
+  --success-a3: #00a43319;
+  --success-a4: #00a83829;
+  --success-a5: #019c393b;
+  --success-a6: #00963c52;
+  --success-a7: #00914071;
+  --success-a8: #00924ba4;
+  --success-a9: #008f4acf;
+  --success-a10: #008647d4;
+  --success-a11: #00713fde;
+  --success-a12: #002616e6;
+
+  --success-contrast: #fff;
+  --success-surface: #f1faf4cc;
+  --success-indicator: #30a46c;
+  --success-track: #30a46c;
+
+  /* Warning */
+  --warning-1: #fefdfb;
+  --warning-2: #fefbe9;
+  --warning-3: #fff7c2;
+  --warning-4: #ffee9c;
+  --warning-5: #fbe577;
+  --warning-6: #f3d673;
+  --warning-7: #e9c162;
+  --warning-8: #e2a336;
+  --warning-9: #ffc53d;
+  --warning-10: #ffba18;
+  --warning-11: #ab6400;
+  --warning-12: #4f3422;
+
+  --warning-a1: #c0800004;
+  --warning-a2: #f4d10016;
+  --warning-a3: #ffe3003d;
+  --warning-a4: #ffd90063;
+  --warning-a5: #f7cd0088;
+  --warning-a6: #eab5008c;
+  --warning-a7: #dc9b009d;
+  --warning-a8: #d28f00c9;
+  --warning-a9: #ffb300c2;
+  --warning-a10: #ffb300e7;
+  --warning-a11: #ab6400;
+  --warning-a12: #341500dd;
+
+  --warning-contrast: #21201c;
+  --warning-surface: #fefae4cc;
+  --warning-indicator: #ffc53d;
+  --warning-track: #ffc53d;
+
+  /* Danger */
+  --danger-1: #fffcfc;
+  --danger-2: #fff7f7;
+  --danger-3: #feebec;
+  --danger-4: #ffdbdc;
+  --danger-5: #ffcdce;
+  --danger-6: #fdbdbe;
+  --danger-7: #f4a9aa;
+  --danger-8: #eb8e90;
+  --danger-9: #e5484d;
+  --danger-10: #dc3e42;
+  --danger-11: #ce2c31;
+  --danger-12: #641723;
+
+  --danger-a1: #ff000003;
+  --danger-a2: #ff000008;
+  --danger-a3: #f3000d14;
+  --danger-a4: #ff000824;
+  --danger-a5: #ff000632;
+  --danger-a6: #f8000442;
+  --danger-a7: #df000356;
+  --danger-a8: #d2000571;
+  --danger-a9: #db0007b7;
+  --danger-a10: #d20005c1;
+  --danger-a11: #c2000ad3;
+  --danger-a12: #55000de8;
+
+  --danger-contrast: #fff;
+  --danger-surface: #fff5f5cc;
+  --danger-indicator: #e5484d;
+  --danger-track: #e5484d;
+}
