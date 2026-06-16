@@ -3,7 +3,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--radius-2x);
+  gap: var(--space-6x);
   box-sizing: border-box;
   border: 1px solid var(--_border, transparent);
   background: var(--_bg, transparent);
@@ -38,6 +38,18 @@
   display: inline-flex;
   align-items: center;
   gap: inherit;
+}
+
+.IconSlot {
+  position: relative;
+  z-index: 1;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: var(--_icon-size);
+  block-size: var(--_icon-size);
+  font-size: var(--_icon-size);
 }
 
 /* Variants */
@@ -113,6 +125,7 @@
 
 /* Sizes */
 .Size--sm {
+  --_icon-size: 16px;
   height: 28px;
   padding-inline: var(--radius-3x);
   border-radius: var(--radius-2x);
@@ -120,6 +133,7 @@
 }
 
 .Size--md {
+  --_icon-size: 18px;
   height: 36px;
   padding-inline: var(--radius-6x);
   border-radius: var(--radius-2x);
@@ -127,6 +141,7 @@
 }
 
 .Size--lg {
+  --_icon-size: 20px;
   height: 44px;
   padding-inline: var(--radius-8x);
   border-radius: var(--radius-3x);
