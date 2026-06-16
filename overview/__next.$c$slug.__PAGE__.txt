@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/1bu_xxv5gj2qu.js","/_next/static/chunks/14mrh2-p_w84d.js"],""]
+3:I[53870,["/_next/static/chunks/1bu_xxv5gj2qu.js","/_next/static/chunks/14mrh2-p_w84d.js"],"TableOfContents"]
+4:I[97367,["/_next/static/chunks/1bu_xxv5gj2qu.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"_Root_12fj4_1","children":[["$","article",null,{"className":"_Prose_pxnsv_1 _Content_12fj4_9","children":["$undefined",[["$","h1",null,{"children":"Lemu"}],"\n",["$","p",null,{"children":"Библиотека UI компонентов React."}],"\n",["$","p",null,{"children":["Документация написана с помощью ",["$","a",null,{"href":"https://tulldoc.tulls.ru/","children":"https://tulldoc.tulls.ru/"}]]}],"\n",["$","p",null,{"children":"Библиотека находится в статусе разработки"}]],["$","nav",null,{"className":"_Root_1kp7b_1","children":["$undefined",["$","$L2",null,{"href":"/controls/button","className":"_Link_1kp7b_10 _Next_1kp7b_25","children":["Button",["$","span",null,{"aria-hidden":true,"children":"→"}]]}]]}]]}],["$","$L3",null,{"headings":[],"title":"На странице"}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"8HdMPAsoxhHvbInNYpMB9"}
+6:null

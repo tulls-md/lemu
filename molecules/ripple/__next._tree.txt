@@ -1,0 +1,5 @@
+:HL["/_next/static/chunks/0p6d33z69o1s1.css","style"]
+:HL["/_next/static/chunks/1vs5n7dncnnpv.css","style"]
+:HL["/_next/static/chunks/0oy61tbqt0qcz.css","style"]
+:HC["/",""]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"slug","param":{"type":"c","key":"molecules/ripple","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"8HdMPAsoxhHvbInNYpMB9"}
