@@ -4,7 +4,7 @@ import type { Ref } from "react";
 
 import { Ripple } from "../../molecules";
 
-import styles from "./button.module.css";
+import stylesControl from "../control.module.css";
 import clsx from "clsx";
 
 type ButtonProps = ControlProps & {
@@ -37,20 +37,23 @@ export function Button({
       {...props}
       type={type}
       className={clsx(
-        styles.Root,
-        styles[`Variant--${variant}`],
-        styles[`Size--${size}`],
-        styles[`Appearance--${appearance}`],
-        rounded && styles.Rounded,
+        stylesControl.Root,
+        stylesControl[`Variant--${variant}`],
+        stylesControl[`Size--${size}`],
+        stylesControl[`Appearance--${appearance}`],
+        rounded && stylesControl.Rounded,
         className,
       )}
     >
-      <span className={styles.IconSlot} aria-hidden={!LeftIconComponent}>
+      <span className={stylesControl.IconSlot} aria-hidden={!LeftIconComponent}>
         {LeftIconComponent && <LeftIconComponent />}
       </span>
-      <span className={styles.Label}>{label}</span>
+      <span className={stylesControl.Label}>{label}</span>
       <Ripple />
-      <span className={styles.IconSlot} aria-hidden={!RightIconComponent}>
+      <span
+        className={stylesControl.IconSlot}
+        aria-hidden={!RightIconComponent}
+      >
         {RightIconComponent && <RightIconComponent />}
       </span>
     </button>
