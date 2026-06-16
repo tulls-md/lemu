@@ -42,4 +42,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./documentation/out
           publish_branch: gh-pages
-          cname: tulldoc.tulls.ru
+          cname: lemu.tulls.ru
