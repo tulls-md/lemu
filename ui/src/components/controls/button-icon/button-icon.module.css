@@ -1,0 +1,13 @@
+.Square.Square {
+  aspect-ratio: 1;
+  padding-inline: 0;
+}
+
+.Square svg {
+  inline-size: var(--_icon-size);
+  block-size: var(--_icon-size);
+}
+
+.Circle.Circle {
+  border-radius: var(--radius-circle);
+}
