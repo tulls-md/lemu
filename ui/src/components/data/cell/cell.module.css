@@ -1,0 +1,7 @@
+.Root {
+  width: 100%;
+  background-color: var(--color-white);
+
+  padding-inline: var(--space-6x);
+  padding-block: var(--space-6x);
+}
