@@ -1,7 +1,17 @@
 .Root {
   width: 100%;
+  height: 70px;
+
   background-color: var(--color-white);
 
   padding-inline: var(--space-6x);
   padding-block: var(--space-6x);
+}
+
+.Title {
+  font: var(--font-h5);
+}
+
+.Description {
+  font: var(--font-caption);
 }

@@ -5,6 +5,12 @@ export default function CellDoc(): DocMeta<typeof Cell> {
   return {
     component: Cell,
     description: "Компонент ячейки. Используется для отображения информации",
-    examples: [{ prop: "title", view: "cell" }],
+    defaultArgs: {
+      title: "Cell Title",
+    },
+    examples: [
+      { prop: "title", view: "cell" },
+      { prop: "description", view: "cell" },
+    ],
   };
 }
