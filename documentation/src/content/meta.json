@@ -1,6 +1,3 @@
 {
-  "pages": ["overview"],
-  "header": [
-    { "label": "GitHub", "href": "https://github.com/tulls-md/lemu" }
-  ]
+  "pages": ["overview"]
 }
