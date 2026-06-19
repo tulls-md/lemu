@@ -3,6 +3,8 @@
 
 @import "./_variables/space.css";
 @import "./_variables/radius.css";
+@import "./_variables/shadow.css";
+@import "./_variables/z-index.css";
 
 @import "./_fonts/golos.css";
 
