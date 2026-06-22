@@ -8,6 +8,7 @@
     "./application.css": "./src/assets/styles/application.css"
   },
   "dependencies": {
+    "@ark-ui/react": "^5.37.2",
     "@fontsource/golos-text": "^5.2.8",
     "@phosphor-icons/react": "^2.1.10",
     "clsx": "^2.1.1",
