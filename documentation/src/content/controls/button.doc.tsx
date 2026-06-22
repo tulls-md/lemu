@@ -24,8 +24,12 @@ export default function createButtonDoc(): DocMeta {
     defaultArgs: {
       label: "Click Me!",
     },
+    mainExample: {
+      label: "Взять бакальчик",
+      leftIcon: MartiniIcon,
+      rightIcon: MartiniIcon,
+    },
     examples: [
-      // { prop: 'onClick', defaultArgs: { onClick: () => alert("Click!") } },
       { prop: "ref", disabled: true },
       { prop: "leftIcon", defaultArgs: { leftIcon: MartiniIcon } },
       { prop: "rightIcon", defaultArgs: { rightIcon: MartiniIcon } },
