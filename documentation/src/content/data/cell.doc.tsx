@@ -1,9 +1,25 @@
-import { DocMeta } from "@tulls-md/tulldoc-code";
+import { Anatomy, DocMeta } from "@tulls-md/tulldoc-code";
 import { Cell } from "@tulls-md/lemu";
 import { BuildingIcon } from "@phosphor-icons/react/ssr";
 
+function AnatomyComponent() {
+  return (
+    <Anatomy.Root>
+      <Anatomy.Part label={"Cell"}>
+        <Anatomy.Part label={"Icon"} />
+        <Anatomy.Part label={"Avatar"} />
+        <Anatomy.Part label={"Info"}>
+          <Anatomy.Part label={"Title"} />
+          <Anatomy.Part label={"Description"} />
+        </Anatomy.Part>
+      </Anatomy.Part>
+    </Anatomy.Root>
+  );
+}
+
 export default function CellDoc(): DocMeta<typeof Cell> {
   return {
+    anatomy: <AnatomyComponent />,
     component: Cell,
     description: "Компонент ячейки. Используется для отображения информации",
     defaultArgs: {
@@ -20,6 +36,14 @@ export default function CellDoc(): DocMeta<typeof Cell> {
         prop: "icon",
         view: "cell",
         defaultArgs: { icon: BuildingIcon },
+      },
+      {
+        prop: "avatarSrc",
+        view: "cell",
+        defaultArgs: {
+          avatarSrc:
+            "https://i.pinimg.com/originals/71/c5/7f/71c57f657b7db1eda23eb48fa79cdd51.jpg?nii=t",
+        },
       },
     ],
   };

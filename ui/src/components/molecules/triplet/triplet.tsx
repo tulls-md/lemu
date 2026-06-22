@@ -4,8 +4,19 @@ import clsx from "clsx";
 export type TripletItem = React.ReactNode | string | null;
 
 export interface TripletProps {
+  /**
+   * Контент, отображаемый слева
+   * */
   left?: TripletItem;
+
+  /**
+   * Контент, отображаемый по центру
+   * */
   center?: TripletItem;
+
+  /**
+   * Контент, отображаемый справа
+   * */
   right?: TripletItem;
 }
 

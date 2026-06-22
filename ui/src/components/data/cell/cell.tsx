@@ -1,5 +1,6 @@
 import styles from "./cell.module.css";
 import type { Icon } from "@phosphor-icons/react";
+import { Avatar } from "../avatar";
 
 interface CellProps {
   /**
@@ -16,12 +17,24 @@ interface CellProps {
    * Описание ясчйеки ячейки. Отображается под заголовком
    */
   description?: string;
+
+  /**
+   * ссылка на изображение
+   * */
+  avatarSrc?: string;
 }
 
-export function Cell({ title, description, icon: IconComponent }: CellProps) {
+export function Cell({
+  title,
+  description,
+  icon: IconComponent,
+  avatarSrc,
+}: CellProps) {
   return (
     <div className={styles.Root}>
       {IconComponent && <IconComponent />}
+
+      {avatarSrc && <Avatar src={avatarSrc} fallback={"JF"} />}
 
       <div>
         <div className={styles.Title}>{title}</div>
