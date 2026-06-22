@@ -17,6 +17,9 @@ export default function ButtonIconDoc(): DocMeta<typeof ButtonIcon> {
     anatomy: <AnatomyComponent />,
     description: "React компонет для отображения действий с помощью иконок",
     component: ButtonIcon,
+    mainExample: {
+      icon: AddressBookIcon,
+    },
     defaultArgs: {
       icon: AddressBookIcon,
     },
