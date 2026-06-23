@@ -18,9 +18,24 @@ export default function TripletDoc(): DocMeta {
     anatomy: <AnatomyComponent />,
     component: Triplet,
     examples: [
-      { prop: "left", view: "cell" },
-      { prop: "center", view: "cell" },
-      { prop: "right", view: "cell" },
+      {
+        prop: "left",
+        description:
+          "Контент, отображаемый в левой колонке. Обычно используется для основного действия или подписи.",
+        view: "cell",
+      },
+      {
+        prop: "center",
+        description:
+          "Контент, отображаемый в центральной колонке. Выравнивается по центру и подходит для заголовка или ключевой информации.",
+        view: "cell",
+      },
+      {
+        prop: "right",
+        description:
+          "Контент, отображаемый в правой колонке. Обычно используется для второстепенного действия или дополнительной информации.",
+        view: "cell",
+      },
     ],
   };
 }

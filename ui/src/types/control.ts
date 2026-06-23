@@ -8,7 +8,7 @@ export type ControlVariant =
   | "danger";
 
 export type ControlSize = "sm" | "md" | "lg";
-export type ControlAppearance = "solid" | "outline";
+export type ControlAppearance = "solid" | "outline" | "ghost";
 
 export interface ControlProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
