@@ -33,19 +33,30 @@ export default function CellDoc(): DocMeta<typeof Cell> {
       icon: AlienIcon,
     },
     examples: [
-      { prop: "title", view: "cell" },
+      {
+        prop: "title",
+        description:
+          "Заголовок ячейки. Основной текст, который описывает её содержимое.",
+        view: "cell",
+      },
       {
         prop: "description",
+        description:
+          "Дополнительный текст, отображаемый под заголовком. Уточняет или раскрывает содержимое ячейки.",
         view: "cell",
         defaultArgs: { description: "Лучшая компания на всем белом свете" },
       },
       {
         prop: "icon",
+        description:
+          "Иконка, отображаемая слева от текста. Помогает быстрее распознать тип содержимого ячейки.",
         view: "cell",
         defaultArgs: { icon: BuildingIcon },
       },
       {
         prop: "avatarSrc",
+        description:
+          "Ссылка на изображение аватара, отображаемого слева от текста. Используется для визуального представления пользователя или объекта.",
         view: "cell",
         defaultArgs: {
           avatarSrc:

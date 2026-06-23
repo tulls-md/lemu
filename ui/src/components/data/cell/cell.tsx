@@ -36,7 +36,7 @@ export function Cell({
 
       {avatarSrc && <Avatar src={avatarSrc} fallback={"JF"} />}
 
-      <div>
+      <div className={styles.Info}>
         <div className={styles.Title}>{title}</div>
         <div className={styles.Description}>{description}</div>
       </div>

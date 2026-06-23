@@ -17,6 +17,11 @@ type ButtonProps = ControlProps & {
    * Иконка, отображаемая справа от label
    */
   rightIcon?: Icon;
+
+  /**
+   * Растягивает кнопку на всю доступную ширину (100%)
+   */
+  adaptive?: boolean;
   ref?: Ref<HTMLButtonElement>;
 };
 
@@ -26,6 +31,7 @@ export function Button({
   size = "md",
   appearance = "solid",
   rounded = false,
+  adaptive = false,
   type = "button",
   className,
   leftIcon: LeftIconComponent,
@@ -42,6 +48,7 @@ export function Button({
         stylesControl[`Size--${size}`],
         stylesControl[`Appearance--${appearance}`],
         rounded && stylesControl.Rounded,
+        adaptive && stylesControl.Adaptive,
         className,
       )}
     >

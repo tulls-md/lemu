@@ -4,6 +4,7 @@
 @import "./_variables/space.css";
 @import "./_variables/radius.css";
 @import "./_variables/shadow.css";
+@import "./_variables/size.css";
 @import "./_variables/z-index.css";
 
 @import "./_fonts/golos.css";
@@ -14,4 +15,5 @@ body {
   flex-direction: column;
 
   font-size: 14px;
+  color: var(--theme-text-application);
 }

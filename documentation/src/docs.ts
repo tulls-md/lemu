@@ -10,6 +10,7 @@ export const docs = createDocSource({
     componentDocs({
       importDoc: (path) => import(`./content/${path}.doc.tsx`),
       componentsDir: join(process.cwd(), "../ui/src/components"),
+      examplesDir: join(process.cwd(), "src/examples"),
     }),
   ],
   lang: "ru",
