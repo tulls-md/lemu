@@ -1,3 +1,17 @@
 {
-  "pages": ["overview", "tokens", "themes"]
+  "pages": ["overview", "tokens", "themes"],
+  "sections": [
+    {
+      "name": "get-started",
+      "label": "Начало работы"
+    },
+    {
+      "name": "components",
+      "label": "Компоненты"
+    },
+    {
+      "name": "styles",
+      "label": "Стили"
+    }
+  ]
 }
