@@ -1,9 +1,9 @@
 import { Anatomy, DocMeta } from "@tulls-md/tulldoc-code";
 import { Ripple } from "@tulls-md/lemu";
 
-import RippleSurface from "../../examples/ripple/ripple-surface";
-import RippleColor from "../../examples/ripple/ripple-color";
-import RippleDuration from "../../examples/ripple/ripple-duration";
+import RippleSurface from "../../../examples/ripple/ripple-surface";
+import RippleColor from "../../../examples/ripple/ripple-color";
+import RippleDuration from "../../../examples/ripple/ripple-duration";
 
 function AnatomyComponent() {
   return (
