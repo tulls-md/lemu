@@ -24,8 +24,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0(@types/react@19.2.17)(next@16.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@tulls-md/tulldoc-code':
-        specifier: ^0.3.0
-        version: 0.3.0(@types/react@19.2.17)(next@16.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        specifier: ^0.3.1
+        version: 0.3.1(@types/react@19.2.17)(next@16.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       next:
         specifier: 16.2.7
         version: 16.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -730,8 +730,8 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
-  '@tulls-md/tulldoc-code@0.3.0':
-    resolution: {integrity: sha512-FRMkMNWdolfKzGipHU8/yMgz5LntopmyVGw5PmohAqfxVDxPrs1KHHFGX46qiIEYFqA8RoBugOBs/uwJfZOwKg==}
+  '@tulls-md/tulldoc-code@0.3.1':
+    resolution: {integrity: sha512-JM5WTXBKa/boN4Y4lEiOlhwRpV2SdVTyv3V6dQOBM5RZYdv4PJvBYZkqK6yon14vhmnN75okAD12dxkc5WZRnw==}
     peerDependencies:
       next: '>=16'
       react: '>=19'
@@ -3659,7 +3659,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@tulls-md/tulldoc-code@0.3.0(@types/react@19.2.17)(next@16.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@tulls-md/tulldoc-code@0.3.1(@types/react@19.2.17)(next@16.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/parser': 7.29.7
       '@tulls-md/tulldoc': 0.5.0(@types/react@19.2.17)(next@16.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
