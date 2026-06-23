@@ -1,73 +1,73 @@
 :root {
   /* Шаг 1: Фон страницы и приложения */
-  --pallete-green1: #fafefb;
+  --pallete-violet1: #100e1f;
 
   /* Шаг 2: Фон страницы и приложения */
-  --pallete-green2: #f4fbf5;
+  --pallete-violet2: #171529;
 
   /* Шаг 3: Фон компонентов */
-  --pallete-green3: #e6f7e8;
+  --pallete-violet3: #261c4e;
 
   /* Шаг 4: Фон компонентов */
-  --pallete-green4: #d7f2d9;
+  --pallete-violet4: #311f6b;
 
   /* Шаг 5: Фон компонентов */
-  --pallete-green5: #c4eac7;
+  --pallete-violet5: #3a287a;
 
   /* Шаг 6: Границы и разделители */
-  --pallete-green6: #abe0b1;
+  --pallete-violet6: #443389;
 
   /* Шаг 7: Границы и разделители */
-  --pallete-green7: #8ad194;
+  --pallete-violet7: #5240a0;
 
   /* Шаг 8: Границы и разделители */
-  --pallete-green8: #56bd69;
+  --pallete-violet8: #664fc3;
 
   /* Шаг 9: Заливка акцентных элементов */
-  --pallete-green9: #34b253;
+  --pallete-violet9: #622fda;
 
   /* Шаг 10: Заливка акцентных элементов */
-  --pallete-green10: #2ba54a;
+  --pallete-violet10: #5615c8;
 
   /* Шаг 11: Текст */
-  --pallete-green11: #028130;
+  --pallete-violet11: #b2a7ff;
 
   /* Шаг 12: Текст */
-  --pallete-green12: #1c3d21;
+  --pallete-violet12: #dfddff;
 
   /* Шаг 1: Фон страницы и приложения */
-  --alpha-pallete-green1: #00cc3305;
+  --alpha-pallete-violet1: #0000ff0f;
 
   /* Шаг 2: Фон страницы и приложения */
-  --alpha-pallete-green2: #00a3180b;
+  --alpha-pallete-violet2: #4c39fd1a;
 
   /* Шаг 3: Фон компонентов */
-  --alpha-pallete-green3: #00ae1519;
+  --alpha-pallete-violet3: #623bfd42;
 
   /* Шаг 4: Фон компонентов */
-  --alpha-pallete-green4: #00ad0d28;
+  --alpha-pallete-violet4: #6535fd61;
 
   /* Шаг 5: Фон компонентов */
-  --alpha-pallete-green5: #01a50d3b;
+  --alpha-pallete-violet5: #6e45fe71;
 
   /* Шаг 6: Границы и разделители */
-  --alpha-pallete-green6: #00a11354;
+  --alpha-pallete-violet6: #7655ff81;
 
   /* Шаг 7: Границы и разделители */
-  --alpha-pallete-green7: #009b1675;
+  --alpha-pallete-violet7: #7d5ffe9a;
 
   /* Шаг 8: Границы и разделители */
-  --alpha-pallete-green8: #009c1da9;
+  --alpha-pallete-violet8: #8364ffbf;
 
   /* Шаг 9: Заливка акцентных элементов */
-  --alpha-pallete-green9: #009e27cb;
+  --alpha-pallete-violet9: #7034fed8;
 
   /* Шаг 10: Заливка акцентных элементов */
-  --alpha-pallete-green10: #009325d4;
+  --alpha-pallete-violet10: #6a16fec5;
 
   /* Шаг 11: Текст */
-  --alpha-pallete-green11: #00802efd;
+  --alpha-pallete-violet11: #b2a7ff;
 
   /* Шаг 12: Текст */
-  --alpha-pallete-green12: #002506e3;
+  --alpha-pallete-violet12: #dfddff;
 }

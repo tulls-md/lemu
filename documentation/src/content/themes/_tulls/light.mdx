@@ -1,0 +1,55 @@
+---
+title: Светлая
+---
+
+# Тема оформления Lemu - светлая
+
+Вся цветовая палитра проекта, основанна на цветах из [дизайн токенов](/tokens/colors)
+
+## Backgrounds
+<CssTable
+    description="Основные фоновые цвета приложений, карточек, форм"
+    src="../ui/src/assets/styles/_themes/tulls-light.theme.css"
+    include={["--theme-background-*"]}
+/>
+
+## Controls
+Цветовая палитра интерактивных компонентов - кнопки, действия, кнопки-иконки
+
+`--theme-control-*-base` - основной цвет, может быть либо фоном, либо обводкой - в зависимости
+от пропа `appearance <solid | outline>` в компаненте
+
+### Primary
+<CssTable
+    description="Основное действие"
+    src="../ui/src/assets/styles/_themes/tulls-light.theme.css"
+    include={["--theme-control-primary-*"]}
+/>
+
+### Secondary
+<CssTable
+    description="Вспомогательное действие"
+    src="../ui/src/assets/styles/_themes/tulls-light.theme.css"
+    include={["--theme-control-secondary-*"]}
+/>
+
+### Success
+<CssTable
+    description="Подтверждение"
+    src="../ui/src/assets/styles/_themes/tulls-light.theme.css"
+    include={["--theme-control-success-*"]}
+/>
+
+### Warning
+<CssTable
+    description="Предупреждение - Внимание"
+    src="../ui/src/assets/styles/_themes/tulls-light.theme.css"
+    include={["--theme-control-warning-*"]}
+/>
+
+### Danger
+<CssTable
+    description="Предупреждение - Опасность"
+    src="../ui/src/assets/styles/_themes/tulls-light.theme.css"
+    include={["--theme-control-danger-*"]}
+/>

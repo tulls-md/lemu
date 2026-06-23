@@ -1,59 +1,48 @@
 @import "../_colors/color-gray.css";
 @import "../_colors/color-green.css";
-@import "../_colors/color-services.css";
+@import "../_colors/color-red.css";
+@import "../_colors/color-violet.css";
 @import "../_colors/color-white.css";
 
 :root {
-  /* Backgrounds */
-  --application-background: var(--green-2);
+  /* ---------- Backgrounds --------- */
 
-  /* Title */
-  --application-title-background: var(--green-9);
+  /* Фона приложения */
+  --theme-background-application: var(--pallete-gray2);
+  /* Фон картоцек, ячеек. панелей */
+  --theme-background-component: var(--color-white);
 
-  /* Text */
-  --color-text-white: var(--color-white);
+  /* ---------- Text ------------ */
+  --theme-text-application: var(--pallete-gray12);
+  --theme-text-caption: var(--pallete-gray11);
 
-  /* Tags */
-  --tag-background: var(--green-3);
-  --tag-background-hover: var(--green-4);
-  --tag-color: var(--green-12);
-  --tag-border: var(--green-6);
-  --tag-border-hover: var(--green-7);
+  /*------------ Controls Primary -----------*/
+  /* Фон или обводка */
+  --theme-control-primary-base: var(--pallete-violet9);
+  /* Цвет текста для заливки */
+  --theme-control-primary-text: var(--color-white);
 
+  /*------------ Controls Secondary -----------*/
+  /* Фон или обводка */
+  --theme-control-secondary-base: var(--pallete-gray9);
+  /* Цвет текста для заливки */
+  --theme-control-secondary-text: var(--color-white);
 
-  /* controls */
-  --color-control-primary-background: var(--green-9);
-  --color-control-primary-background-hover: var(--green-10);
-  --color-control-primary-text: var(--color-white);
-  --color-control-primary-outline-border: var(--green-7);
-  --color-control-primary-outline-text: var(--green-11);
-  --color-control-primary-outline-background-hover: var(--green-a3);
+  /*------------ Controls Success -----------*/
+  /* Фон или обводка */
+  --theme-control-success-base: var(--pallete-green9);
+  /* Цвет текста для заливки */
+  --theme-control-success-text: var(--color-white);
 
-  --color-control-secondary-background: var(--green-a3);
-  --color-control-secondary-background-hover: var(--green-a4);
-  --color-control-secondary-text: var(--green-a11);
-  --color-control-secondary-outline-border: var(--green-a7);
-  --color-control-secondary-outline-text: var(--green-a11);
-  --color-control-secondary-outline-background-hover: var(--green-a3);
+  /*------------ Controls Warning -----------*/
+  /* Фон или обводка */
+  --theme-control-warning-base: var(--pallete-gray9);
+  /* Цвет текста для заливки */
+  --theme-control-warning-text: var(--color-white);
 
-  --color-control-success-background: var(--success-9);
-  --color-control-success-background-hover: var(--success-10);
-  --color-control-success-text: var(--success-contrast);
-  --color-control-success-outline-border: var(--success-7);
-  --color-control-success-outline-text: var(--success-11);
-  --color-control-success-outline-background-hover: var(--success-a3);
-
-  --color-control-warning-background: var(--warning-9);
-  --color-control-warning-background-hover: var(--warning-10);
-  --color-control-warning-text: var(--warning-contrast);
-  --color-control-warning-outline-border: var(--warning-7);
-  --color-control-warning-outline-text: var(--warning-11);
-  --color-control-warning-outline-background-hover: var(--warning-a3);
-
-  --color-control-danger-background: var(--danger-9);
-  --color-control-danger-background-hover: var(--danger-10);
-  --color-control-danger-text: var(--danger-contrast);
-  --color-control-danger-outline-border: var(--danger-7);
-  --color-control-danger-outline-text: var(--danger-11);
-  --color-control-danger-outline-background-hover: var(--danger-a3);
+  /*------------ Controls Danger -----------*/
+  /* Фон или обводка */
+  --theme-control-danger-base: var(--pallete-red9);
+  /* Цвет текста для заливки */
+  --theme-control-danger-text: var(--color-white);
 }

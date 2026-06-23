@@ -23,10 +23,6 @@
     color 0.15s ease;
 }
 
-.Root:hover {
-  background: var(--_bg-hover, var(--_bg, transparent));
-}
-
 .Root:disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -47,77 +43,59 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  inline-size: var(--_icon-size);
-  block-size: var(--_icon-size);
-  font-size: var(--_icon-size);
 }
 
 /* Variants */
 
 .Variant--primary {
-  --_bg: var(--color-control-primary-background);
-  --_bg-hover: var(--color-control-primary-background-hover);
-  --_fg: var(--color-control-primary-text);
-  --_border: var(--color-control-primary-background);
-
-  --_outline-border: var(--color-control-primary-outline-border);
-  --_outline-fg: var(--color-control-primary-outline-text);
-  --_outline-bg-hover: var(--color-control-primary-outline-background-hover);
+  --_base: var(--theme-control-primary-base);
+  --_text: var(--theme-control-primary-text);
 }
 
 .Variant--secondary {
-  --_bg: var(--color-control-secondary-background);
-  --_bg-hover: var(--color-control-secondary-background-hover);
-  --_fg: var(--color-control-secondary-text);
-  --_border: var(--color-control-secondary-background);
-
-  --_outline-border: var(--color-control-secondary-outline-border);
-  --_outline-fg: var(--color-control-secondary-outline-text);
-  --_outline-bg-hover: var(--color-control-secondary-outline-background-hover);
+  --_base: var(--theme-control-secondary-base);
+  --_text: var(--theme-control-secondary-text);
 }
 
 .Variant--success {
-  --_bg: var(--color-control-success-background);
-  --_bg-hover: var(--color-control-success-background-hover);
-  --_fg: var(--color-control-success-text);
-  --_border: var(--color-control-success-background);
-
-  --_outline-border: var(--color-control-success-outline-border);
-  --_outline-fg: var(--color-control-success-outline-text);
-  --_outline-bg-hover: var(--color-control-success-outline-background-hover);
+  --_base: var(--theme-control-success-base);
+  --_text: var(--theme-control-success-text);
 }
 
 .Variant--warning {
-  --_bg: var(--color-control-warning-background);
-  --_bg-hover: var(--color-control-warning-background-hover);
-  --_fg: var(--color-control-warning-text);
-  --_border: var(--color-control-warning-background);
-
-  --_outline-border: var(--color-control-warning-outline-border);
-  --_outline-fg: var(--color-control-warning-outline-text);
-  --_outline-bg-hover: var(--color-control-warning-outline-background-hover);
+  --_base: var(--theme-control-warning-base);
+  --_text: var(--theme-control-warning-text);
 }
 
 .Variant--danger {
-  --_bg: var(--color-control-danger-background);
-  --_bg-hover: var(--color-control-danger-background-hover);
-  --_fg: var(--color-control-danger-text);
-  --_border: var(--color-control-danger-background);
-
-  --_outline-border: var(--color-control-danger-outline-border);
-  --_outline-fg: var(--color-control-danger-outline-text);
-  --_outline-bg-hover: var(--color-control-danger-outline-background-hover);
+  --_base: var(--theme-control-danger-base);
+  --_text: var(--theme-control-danger-text);
 }
 
 /* Appearance */
+
+/* Сплошная заливка: фон и обводка — base, текст — text */
 .Appearance--solid {
+  --_bg: var(--_base);
+  --_fg: var(--_text);
+  --_border: var(--_base);
 }
 
+/* Обводка: прозрачный фон, обводка — base, текст — общий цвет приложения */
 .Appearance--outline {
   --_bg: transparent;
-  --_bg-hover: var(--_outline-bg-hover);
-  --_fg: var(--_outline-fg);
-  --_border: var(--_outline-border);
+  --_fg: var(--theme-text-application);
+  --_border: var(--_base);
+
+  /* На прозрачном фоне волна окрашивается в цвет текста варианта */
+  --ripple-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+
+/* Призрак: без фона и обводки, текст — base */
+.Appearance--ghost {
+  --_bg: transparent;
+  --_fg: var(--_base);
+  --_border: transparent;
 
   /* На прозрачном фоне волна окрашивается в цвет текста варианта */
   --ripple-color: color-mix(in srgb, currentColor 22%, transparent);
@@ -125,29 +103,31 @@
 
 /* Sizes */
 .Size--sm {
-  --_icon-size: 16px;
-  height: 28px;
-  padding-inline: var(--radius-3x);
+  height: var(--size-18x);
+  padding-inline: var(--space-7x);
   border-radius: var(--radius-2x);
   font: var(--font-btn-sm);
 }
 
 .Size--md {
-  --_icon-size: 18px;
-  height: 36px;
-  padding-inline: var(--radius-6x);
+  height: var(--size-20x);
+  padding-inline: var(--space-8x);
   border-radius: var(--radius-2x);
   font: var(--font-btn-md);
 }
 
 .Size--lg {
-  --_icon-size: 20px;
-  height: 44px;
-  padding-inline: var(--radius-8x);
+  height: var(--size-22x);
+  padding-inline: var(--space-10x);
   border-radius: var(--radius-3x);
   font: var(--font-btn-lg);
 }
 
 .Rounded {
   border-radius: var(--radius-full);
+}
+
+/* Растягивает кнопку на всю доступную ширину */
+.Adaptive {
+  width: 100%;
 }
